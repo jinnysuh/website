@@ -11,7 +11,8 @@ export default class Home extends Component {
     super()
     this.state = {
       loginModalShown: false,
-      signupModalShown: false
+      signupModalShown: false,
+      text: 'anyone'
     }
     this.toggleLogin = this.toggleLogin.bind(this)
     this.toggleSignup = this.toggleSignup.bind(this)
@@ -22,22 +23,19 @@ export default class Home extends Component {
     return (
       <div>
         <PageHeading
-          title="Welcome!"
+          title={`Welcome to my website! ${this.state.text}`}
         />
-        <ButtonGroup style={{marginTop: '1em'}}>
-          <Button
-            color="warning"
-            onClick={this.toggleLogin}
-          >
-            Log In
-          </Button>
-          <Button
-            color="success"
-            onClick={this.toggleSignup}
-          >
-            Sign Up
-          </Button>
-        </ButtonGroup>
+
+          <div className="input-group">
+           <input
+             type="text"
+              className="form-control"
+               placeholder="Username"
+               value={this.state.text}
+               onChange={event => this.setState({text: event.target.value})}
+             />
+          </div>
+
         <LoginModal isOpen={loginModalShown} toggle={this.toggleLogin} />
         <SignupModal isOpen={signupModalShown} toggle={this.toggleSignup} />
       </div>

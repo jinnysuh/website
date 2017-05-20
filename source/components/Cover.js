@@ -5,7 +5,7 @@ export default function Cover({text, textColor}) {
     <div
       className="jumbotron jumbotron-fluid site-cover-photo"
       style={{
-        height: '20em',
+        height: '27em',
         minHeight: '30vh',
         display: 'flex',
         alignItems: 'center',
