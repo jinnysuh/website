@@ -18,7 +18,7 @@ const defaultState = {
         },
         {
           title: 'Creeper',
-          description: 'Creepers are greenish mobs that blow up. When you hear a hissing sound behnd you, run!! That`s a creeper getting ready to blow up.',
+          description: 'Creepers are greenish mobs that blow up. When you hear a hissing sound behnd you, run for your lifes!! That`s a creeper getting ready to blow up.',
           src: '/images/mobs/creeper.png',
           topMargin: true
         },
