@@ -14,7 +14,7 @@ class Mobs extends Component {
       <div>
         <PageHeading
           title="Minecraft Mobs!!"
-          description="Dangerous Monsters In Minecraft"
+          description="Dangerous Mobs In Minecraft"
         />
         <Container>
           {sections.map((section, index) => (
