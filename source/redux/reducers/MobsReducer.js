@@ -36,7 +36,7 @@ const defaultState = {
         },
         {
           title: 'Witch',
-          description: 'Witch is a mob that drinks and throws potions and defend and attack. ',
+          description: 'Witch is a mob that drinks and throws potions and defend and attack.If a villager get struck by lightening, it changes into a witch. ',
           src: '/images/mobs/witch.png'
         }
       ]
@@ -47,13 +47,13 @@ const defaultState = {
       thumbs: [
         {
           title: 'Blaze',
-          description: '블레이즈는 불을 던지고 접촉해서 데미지를 주는 몬스터입니다.',
+          description: 'Blaze is a mob that flys and throw fireballs at us.',
           src: '/images/mobs/blaze.png',
           topMargin: true
         },
         {
           title: 'Ghast',
-          description: '가스트는 아주 크고 \'네모난\' 몬스터입니다. 둥둥 떠다니면서 우리를 보면 화염구를 내뱉죠. 가스트는 화염구를 활로 쏴서 가스트에게 돌려보내서 죽일 수 있습니다. 그리고, 낚싯대(?)로 끌어와서 때려 죽일수도 있죠.',
+          description: 'Ghast is a white square mob that spits fireballs at us.We can kill a ghast by bows and draw them with fishing rods.',
           src: '/images/mobs/ghast.gif',
           topMargin: true
         },
