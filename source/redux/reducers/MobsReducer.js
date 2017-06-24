@@ -36,7 +36,7 @@ const defaultState = {
         },
         {
           title: 'Witch',
-          description: '마녀는 포션을 던지고 마셔서 자신을 보호하는 몹입니다. ',
+          description: 'Witch is a mob that drinks and throws potions and defend and attack. ',
           src: '/images/mobs/witch.png'
         }
       ]

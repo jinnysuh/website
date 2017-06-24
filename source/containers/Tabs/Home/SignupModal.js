@@ -4,10 +4,8 @@ import {
   Modal, ModalHeader, ModalBody, ModalFooter,
   Form, FormGroup, Label, Input
 } from 'reactstrap';
-import {connect} from 'react-redux';
-import {signup} from 'redux/actions';
 
-class SignupModal extends Component {
+export default class SignupModal extends Component {
   constructor() {
     super()
     this.state = {
@@ -17,7 +15,7 @@ class SignupModal extends Component {
   }
 
   render() {
-    const {isOpen, toggle, signup} = this.props;
+    const {isOpen, toggle} = this.props;
     const {username, password} = this.state;
     return (
       <Modal isOpen={isOpen} toggle={toggle}>
@@ -45,15 +43,10 @@ class SignupModal extends Component {
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={() => signup({username, password})}>Sign Up</Button>{' '}
+          <Button color="primary" onClick={() => console.log('hello')}>Sign Up</Button>{' '}
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>
     )
   }
 }
-
-export default connect(
-  null,
-  {signup}
-)(SignupModal);
